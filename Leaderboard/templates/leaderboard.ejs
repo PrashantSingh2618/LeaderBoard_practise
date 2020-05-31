@@ -9,20 +9,25 @@
     <h1>Current leaderBoard </h1>
 
 
-    <table border = "1">
+    <table style="width:100%">
          <tr>
-            <th>Name</th>
-            <th>Submissions</th>
+            <td><b>Name</b></td>
+            <td><b>Submissions</b></td>
          </tr>
 
-         <%for(var i = 0 ;i<list.length;i++){%>
-           <tr><%= list[i].userName %></tr>
-           <tr><%= list[i].submissions %></tr>
+         <% for(var i=0;i<list.length;i++){ %>
+           <tr>
+           <td><%= list[i].userName %></td>
+           <td><%= list[i].submissions %></td>
+         </br>
+         </tr>
          <%}%>
 
 
 
       </table>
+
+    </br>
 
 
 
