@@ -62,7 +62,7 @@ app.get('/leaderboard',(req,res)=>{
   ])
   list = list.sort(function (a, b) { return b._id - a._id; });
 
-  res.render('leaderboard',list);
+  res.render('leaderboard',{list:list});
 
 })
 
