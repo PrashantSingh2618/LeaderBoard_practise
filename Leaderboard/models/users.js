@@ -1,7 +1,11 @@
+//model for user
+
 const mongoose =  require('mongoose')
 const {Schema} = mongoose
 const userSchema = new mongoose.Schema({
-  
+
+//making changes
+hello
   userName:{
     type:String
   },
